@@ -34,7 +34,7 @@ public class Contact implements Serializable {
 
     @Past(message = "Date of birth must be in the past.")
     @NotNull(message = "This field is mandatory")
-    @DateTimeFormat(pattern = "DD-MM-YYYY")
+    @DateTimeFormat(pattern = "MM-DD-YYYY")
     private LocalDate dateOfBirth;
 
     @Min(value = 10, message = "Must be above 10 years old")
